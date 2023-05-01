@@ -26,7 +26,7 @@ namespace helloworld
 
         public static IHostBuilder CreateHostBuilder(string[] args)
         {
-            string port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+            string port = "8081";
             string url = String.Concat("http://0.0.0.0:", port);
 
             return Host.CreateDefaultBuilder(args)
